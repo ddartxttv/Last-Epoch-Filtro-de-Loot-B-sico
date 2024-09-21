@@ -3,7 +3,7 @@
   <name>Loot Filter Básico ddartx</name>
   <filterIcon>6</filterIcon>
   <filterIconColor>16</filterIconColor>
-  <description>Mostra todos T7, duplo T6, itens únicos com LP separados por cor!</description>
+  <description>Mostra todos T7, duplo T6, itens únicos com LP separados por cor! Preencher a primeira regra (1) do filtro com os afixos úteis pra sua build</description>
   <lastModifiedInVersion>1.1.7.3</lastModifiedInVersion>
   <lootFilterVersion>2</lootFilterVersion>
   <rules>
@@ -50,7 +50,7 @@
           <rarity>UNIQUE</rarity>
           <advanced>true</advanced>
           <requiredLegendaryPotential>1</requiredLegendaryPotential>
-          <requiredWeaversWill>10</requiredWeaversWill>
+          <requiredWeaversWill>7</requiredWeaversWill>
         </Condition>
       </conditions>
       <color>3</color>
@@ -1374,6 +1374,33 @@
         </Condition>
       </conditions>
       <color>6</color>
+      <isEnabled>true</isEnabled>
+      <levelDependent>false</levelDependent>
+      <minLvl>0</minLvl>
+      <maxLvl>0</maxLvl>
+      <emphasized>false</emphasized>
+      <nameOverride />
+    </Rule>
+    <Rule>
+      <type>SHOW</type>
+      <conditions>
+        <Condition i:type="RarityCondition">
+          <rarity>EXALTED</rarity>
+          <advanced>false</advanced>
+          <requiredLegendaryPotential>0</requiredLegendaryPotential>
+          <requiredWeaversWill>5</requiredWeaversWill>
+        </Condition>
+        <Condition i:type="AffixCondition">
+          <affixes />
+          <comparsion>ANY</comparsion>
+          <comparsionValue>0</comparsionValue>
+          <minOnTheSameItem>1</minOnTheSameItem>
+          <combinedComparsion>ANY</combinedComparsion>
+          <combinedComparsionValue>1</combinedComparsionValue>
+          <advanced>false</advanced>
+        </Condition>
+      </conditions>
+      <color>0</color>
       <isEnabled>true</isEnabled>
       <levelDependent>false</levelDependent>
       <minLvl>0</minLvl>
